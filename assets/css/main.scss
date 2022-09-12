@@ -1,0 +1,59 @@
+@import "abstracts/colors";
+@import "abstracts/fonts";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+// body{
+//     background-color: #eee;
+// }
+header{
+    background-color: $Header-grey;
+    .header-container{
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        padding: 50px;
+        #logo-container{
+            width: 250px;
+            img{
+                width: 100%;
+            }
+        }
+        hgroup{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 2em;
+            line-height: 4em;
+            h1{
+                @include headlineFontPrimary;
+                text-transform: uppercase;
+                font-size: 3.5vw;
+                letter-spacing: -5px;
+
+            }
+            h2{
+                @include headlingFontSecondary;
+                text-transform: capitalize;
+                font-size: 2.23vw;
+            }
+        }
+    }
+}
+#mother{
+
+    .card{
+
+        .container{
+            width: 100px;
+            img{
+                width: 100%;
+            }
+            h4{
+
+            }
+        }
+    }
+}
