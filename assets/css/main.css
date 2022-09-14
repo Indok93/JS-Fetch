@@ -41,9 +41,94 @@ header .header-container hgroup h2 {
   font-size: 2.23vw;
 }
 
-#mother .card .container {
+#mother {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  box-sizing: border-box;
+}
+#mother .card {
+  border-radius: 20px;
+  width: 300px;
+  aspect-ratio: 1/1;
+}
+#mother .card .card-container {
+  display: flex;
+  flex-direction: column;
+}
+#mother .card .card-container .card-top {
+  display: flex;
+  padding: 1em;
+}
+#mother .card .card-container .card-top .number {
+  color: white;
+  font-family: "Noto Sans Balinese", sans-serif;
+  font-weight: 400;
+  font-size: 3vw;
+}
+#mother .card .card-container .card-top h4 {
+  font-family: "Noto Sans Balinese", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 1vw;
+  align-self: center;
+  margin-left: 1em;
+  text-transform: uppercase;
+  line-height: 1.2em;
+}
+#mother .card .card-container .card-middle {
+  display: flex;
+  justify-content: center;
+}
+#mother .card .card-container .card-middle .card-img {
   width: 100px;
 }
-#mother .card .container img {
+#mother .card .card-container .card-middle .card-img img {
+  display: block;
   width: 100%;
+  filter: invert(1);
+}
+#mother .card-detail {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+#mother .card-detail h1 {
+  font-family: "Noto Sans Balinese", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 3vw;
+  text-align: center;
+  text-transform: capitalize;
+}
+#mother .card-detail h2 {
+  font-family: "Noto Sans Balinese", sans-serif;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  font-size: 1.5vw;
+}
+#mother .card-detail .icons {
+  display: block;
+  width: 20vw;
+  margin-left: auto;
+  margin-right: auto;
+  filter: invert(1);
+}
+#mother .card-detail .images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  margin-top: 1em;
+  width: 75%;
+  height: auto;
+}
+#mother .card-detail p {
+  font-family: "Rubik", sans-serif;
+  font-style: 300;
+  color: white;
+  padding: 40px;
+  font-size: 1vw;
 }/*# sourceMappingURL=main.css.map */

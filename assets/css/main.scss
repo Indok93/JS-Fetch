@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+    // border: 1px solid red;
 }
 // body{
 //     background-color: #eee;
@@ -35,7 +36,7 @@ header{
 
             }
             h2{
-                @include headlingFontSecondary;
+                @include headlineFontSecondary;
                 text-transform: capitalize;
                 font-size: 2.23vw;
             }
@@ -43,17 +44,91 @@ header{
     }
 }
 #mother{
-
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    box-sizing: border-box;
     .card{
-
-        .container{
-            width: 100px;
-            img{
-                width: 100%;
+        border-radius: 20px;
+        width: 300px;
+        aspect-ratio: 1/1;
+        .card-container{
+            display: flex;
+            flex-direction: column;
+            .card-top{
+                display: flex;
+                padding: 1em;
+                .number{
+                    color: $Card-text-color;
+                    @include headlineFontSecondary;
+                    font-size: 3vw;
+                }
+                h4{
+                    @include headlineFontPrimary;
+                    color: $Card-text-color;
+                    font-size: 1vw;
+                    align-self: center;
+                    margin-left: 1em;
+                    text-transform: uppercase;
+                    line-height: 1.2em;
+                }
             }
-            h4{
-
+            .card-middle{
+                display: flex;
+                justify-content: center;
+                .card-img{
+                    width: 100px;
+                    img{
+                        display: block;
+                        width: 100%;
+                        filter: invert(1);
+                    }
+                }
             }
+        }
+    }
+    .card-detail{
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+        h1{
+            @include headlineFontPrimary;
+            color: $Card-text-color;
+            font-size: 3vw;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        h2{
+            @include headlineFontSecondary;
+            color: $Card-text-color;
+            text-align: center;
+            font-size: 1.5vw;
+        }
+        .icons{
+            display: block;
+            width: 20vw;
+            margin-left: auto;
+            margin-right: auto;
+            filter: invert(1);
+        }
+        .images{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+            margin-top: 1em;
+            width: 75%;
+            height: auto;
+        }
+        p{
+            @include bodyFontPrimary;
+            color: $Card-text-color;
+            padding: 40px;
+            font-size: 1vw;
+        }
+        button{
+
         }
     }
 }
