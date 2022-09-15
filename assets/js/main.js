@@ -67,7 +67,9 @@ const getDetail = (id) => {
 }
 
 const renderDetails = (detailData) => {
-    const{byline, description, icon, image, title, color} = detailData;
+    
+    const{byline, description, icon, image, title, color, targets} = detailData;
+    
     document.getElementById("mother").innerHTML = `
     <article class="card-detail" style='background-color: #${color}'>
         <h1>${title}</h1>
@@ -75,8 +77,18 @@ const renderDetails = (detailData) => {
         <img src='data:image/svg+xml; utf8, ${icon}' alt='icon' class="icons">
         <img src="${image}" alt="image" class="images">
         <p>${description}</p>
-        <button>Tilbage</button>
-    </article>`;
+        <ul class="targets">${targets.map((target) => renderTargets(target)).join('')}</ul>
+    </article>
+    `;
 }
 
-
+const renderTargets = (targets) => {
+    // console.log("target", targets);
+    const {title, description} = targets;
+    return `
+    <li>
+    <h3>${title}</h3>
+    <p>${description}</p>
+    </li>
+    `
+}

@@ -127,8 +127,27 @@ header{
             padding: 40px;
             font-size: 1vw;
         }
-        button{
+    }
+    .targets{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        li{
+            // background-color: $Header-grey;
+            margin-bottom: 1em;
+            border: 1px solid $Icon-border;
+            border-radius: 20px;
+            padding: 20px;
+            h3{
+                @include headlineFontSecondary;
+                font-size: 1.5vw;
+                color: $Card-text-color;
 
+            }
+            p{
+                @include bodyFontSecondary;
+                font-size: 1vw;
+            }
         }
     }
 }

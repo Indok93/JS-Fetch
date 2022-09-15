@@ -131,4 +131,26 @@ header .header-container hgroup h2 {
   color: white;
   padding: 40px;
   font-size: 1vw;
+}
+#mother .targets {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#mother .targets li {
+  margin-bottom: 1em;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 20px;
+}
+#mother .targets li h3 {
+  font-family: "Noto Sans Balinese", sans-serif;
+  font-weight: 400;
+  font-size: 1.5vw;
+  color: white;
+}
+#mother .targets li p {
+  font-family: "Rubik", sans-serif;
+  font-style: 600;
+  font-size: 1vw;
 }/*# sourceMappingURL=main.css.map */
